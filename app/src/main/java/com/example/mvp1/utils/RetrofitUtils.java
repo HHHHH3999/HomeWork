@@ -1,5 +1,7 @@
 package com.example.mvp1.utils;
 
+import android.util.Log;
+
 import com.google.gson.Gson;
 
 import java.io.IOException;
@@ -67,7 +69,7 @@ apiService.data(url)
 
             @Override
             public void onError(@NonNull Throwable e) {
-
+                Log.e("tag","网络错误："+e.getMessage());
             }
 
             @Override
